@@ -1,0 +1,62 @@
+.favourite{
+    padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.favourite h2{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.favourite-empty{
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: rgba(255,255,255,0,05);
+    border-radius: 12px;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.favourite-empty h2{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #e50914;
+}
+
+.favourite-empty p{
+    color: #999;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.movie-grid{
+    animation: fadeIn 0.3s ease-out forwards;
+}
+.favourite-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #999; /* default grey */
+  transition: color 0.3s ease;
+}
+
+.favourite-btn.active {
+  color: #e50914; /* red when clicked */
+}
+
